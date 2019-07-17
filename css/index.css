@@ -141,6 +141,11 @@ div {
   margin: 20px 20px;
   background: white;
 }
+div h1,
+h2,
+h3 {
+  background-color: #f2f2f2;
+}
 .content {
   width: 80%;
   margin: 0 auto;
@@ -153,6 +158,9 @@ button {
   border: 3px solid black;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.4rem;
+}
+button:hover {
+  background-color: #f2f2f2;
 }
 .firstDiv {
   background-color: white;
@@ -215,19 +223,15 @@ button {
   text-decoration: underline;
 }
 .secondHalf #info {
-  border: 2px solid black;
-  padding: 20px 20px;
+  font-weight: bold;
+  padding: 20px 0px;
   border-radius: 5px;
   width: 15%;
+  background: white;
 }
 .navDiv {
   background: transparent;
   margin-bottom: 0;
-}
-@media screen and (max-width: 500px) {
-  .navDiv {
-    width: 500px;
-  }
 }
 nav {
   display: flex;
@@ -254,7 +258,8 @@ nav a:hover {
 }
 @media screen and (max-width: 500px) {
   nav {
-    width: 420px;
+    width: 100%;
+    justify-content: space-evenly;
   }
   nav a {
     font-size: 1rem;
@@ -264,6 +269,7 @@ nav a:hover {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  border-radius: 5px;
 }
 .secondDiv div {
   margin: 20px 20px;
@@ -272,10 +278,15 @@ nav a:hover {
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.2rem;
 }
+.secondDiv h2 {
+  text-decoration: underline;
+}
+.secondDiv h2,
+.secondDiv p {
+  background-color: #f2f2f2;
+  padding: 15px 0 ;
+}
 @media screen and (max-width: 500px) {
-  .secondDiv {
-    width: 500px;
-  }
   .secondDiv div {
     font-size: 1rem;
   }

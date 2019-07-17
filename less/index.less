@@ -142,8 +142,8 @@ table {
 
 html,
 body {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
     font-size: 10;
     background-image: url(https://images.wallpaperscraft.com/image/stars_milky_way_space_116893_3840x2160.jpg);
 
@@ -171,7 +171,13 @@ body {
 div {
     .margin();
     background: @globalColor;
+	
+}
 
+div h1,
+h2,
+h3 {
+    background-color: #f2f2f2;
 }
 
 
@@ -190,6 +196,13 @@ button {
     border: 3px solid black;
     font-family: @font2;
     font-size: 1.4rem;
+
+
+
+}
+
+button:hover {
+    background-color: #f2f2f2;
 }
 
 .firstDiv {
@@ -219,12 +232,12 @@ button {
 
 }
 
-.firstHalf{
-	display: flex;
-	
-	flex-flow: wrap;
+.firstHalf {
+    display: flex;
 
-	
+    flex-flow: wrap;
+
+
 }
 
 
@@ -245,19 +258,20 @@ button {
     h3 {
         font-size: 1.3rem;
         font-family: @font2;
-	}
-	
-	@media screen and(max-width: 500px){
+    }
 
-		height: 85rem;
-		display: flex;
-		flex-flow: column-reverse;
-		.firstHalf div{
-			width: 100%;
-			flex-flow: row wrap;
-			justify-content: center;
-		}
-	}
+    @media screen and(max-width: 500px) {
+
+        height: 85rem;
+        display: flex;
+        flex-flow: column-reverse;
+
+        .firstHalf div {
+            width: 100%;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+    }
 
 
 }
@@ -265,32 +279,31 @@ button {
 
 
 
-.secondHalf{
-	width: 65%;
-	padding: 30px;
+.secondHalf {
+    width: 65%;
+    padding: 30px;
 
-	h3{
-		font-size: 2.2rem;
-		padding: 30px 0;
-		text-decoration: underline;
-	}
+    h3 {
+        font-size: 2.2rem;
+        padding: 30px 0;
+        text-decoration: underline;
+    }
 
-	#info{
-		border: 2px solid black;
-		padding: 20px 20px;
-		border-radius: 5px;
-		width: 15%;
-	}
+    #info {
+		font-weight: bold;
+        padding: 20px 0px;
+        border-radius: 5px;
+        width: 15%;
+        background: @globalColor;
+    }
 }
 
 
 .navDiv {
     background: transparent;
-	margin-bottom: 0;
-	
-	@media screen and(max-width: 500px){
-		width: 500px;
-	}
+    margin-bottom: 0;
+
+
 
 }
 
@@ -323,17 +336,19 @@ nav {
         border: 2px solid @globalColor;
         .borderRad();
         transition: 600ms;
-	}
+    }
 
 
-	@media screen and(max-width: 500px){
-		width: 420px;
+    @media screen and(max-width: 500px) {
+        width: 100%;
 
-		a{
-			font-size: 1rem;
-		}
+        justify-content: space-evenly;
 
-	}
+        a {
+            font-size: 1rem;
+        }
+
+    }
 }
 
 
@@ -342,7 +357,8 @@ nav {
 .secondDiv {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+	justify-content: space-between;
+	.borderRad();
 
     div {
         .margin();
@@ -350,20 +366,25 @@ nav {
         font-size: 1.1rem;
         font-family: @font2;
         font-size: 1.2rem;
+    }
+
+	h2{
+		text-decoration: underline;
 	}
-	
 
-	@media screen and(max-width: 500px){
-		
-		width: 500px;
+    h2,
+    p {
+		background-color: #f2f2f2;
+		padding: 15px 0 ;
+    }
+
+    @media screen and(max-width: 500px) {
+        div {
+            font-size: 1rem;
+        }
 
 
-		div{
-			font-size: 1rem;
-		}
-		
-
-	}
+    }
 }
 
 
@@ -435,43 +456,46 @@ li:nth-child(even) {
     background-color: white;
 }
 
-@media screen and(max-width: 500px){
-	.content{
-		width: 500px;
-	}
+@media screen and(max-width: 500px) {
+    .content {
+        width: 500px;
+    }
 
-	#me{
-		width: 350px;
-	}
+    #me {
+        width: 350px;
+    }
 }
 
-.botDiv h1, h3, a, button{
-	margin-top: 20px;
+.botDiv h1,
+h3,
+a,
+button {
+    margin-top: 20px;
 }
 
 
 
 .secondHalf {
     border: 2px solid black;
-	border-radius: 5px;
-	
+    border-radius: 5px;
 
-	@media screen and(max-width: 500px){
-		
-		
-		
-		h3{
-			font-size: 1.4rem;
-			padding: 5px 0;
-			text-decoration: underline;
-		}
-	
-		#info{
-			border: 2px solid black;
-			padding: 10px 20px;
-			border-radius: 5px;
-			width: 30%;
-		}
 
-	}
+    @media screen and(max-width: 500px) {
+
+
+
+        h3 {
+            font-size: 1.4rem;
+            padding: 5px 0;
+            text-decoration: underline;
+        }
+
+        #info {
+            border: 2px solid black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+    }
 }
